@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Realizacje | P.U.H. MAGDACH Piotr Orzechowski, Trzebnica</title>
+<meta name="description" content="Galeria realizacji firmy MAGDACH: budowa domów, dachy, elewacje, altany i zadaszenia, budynki gospodarcze. Trzebnica i okolice.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Barlow+Condensed:wght@600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          ink: '#111111',
+          coal: '#1a1a1a',
+          'coal-raised': '#232323',
+          'coal-float': '#2d2d2d',
+          paper: '#f3f3f1',
+          line: '#e1e1dc',
+          mute: '#585854',
+          'mute-dark': '#a8a8a2',
+          yellow: '#ffdd00',
+          'yellow-deep': '#f0c800',
+        },
+        fontFamily: {
+          display: ['"Barlow Condensed"', 'sans-serif'],
+          sans: ['"Archivo"', 'sans-serif'],
+        },
+      },
+    },
+  };
+</script>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-white text-ink">
+
+<!-- ============ HEADER ============ -->
+<header id="site-header" class="site-header fixed top-0 inset-x-0 z-50">
+  <div class="max-w-7xl mx-auto pl-5 md:pl-8 h-[68px] md:h-20 flex items-stretch justify-between gap-6">
+    <a href="index.html" class="flex items-center shrink-0" aria-label="P.U.H. MAGDACH, strona główna">
+      <img src="assets/logo-dark.webp" alt="P.U.H. MAGDACH" width="557" height="86" class="h-7 md:h-9 w-auto">
+    </a>
+    <nav class="hidden lg:flex items-center gap-8 font-semibold text-[15px]" aria-label="Główna nawigacja">
+      <a href="uslugi.html" class="nav-link">Usługi</a>
+      <a href="index.html#sso" class="nav-link">Budowa SSO</a>
+      <a href="index.html#altany" class="nav-link">Altany</a>
+      <a href="realizacje.html" class="nav-link" aria-current="page">Realizacje</a>
+      <a href="index.html#opinie" class="nav-link">Opinie</a>
+      <a href="#kontakt" class="nav-link">Kontakt</a>
+    </nav>
+    <div class="flex items-stretch">
+      <a href="tel:+48608630821" class="header-phone flex items-center gap-2.5 px-5 md:px-7 font-display font-bold text-xl md:text-2xl" aria-label="Zadzwoń: 608 630 821">
+        <i data-lucide="phone" class="w-5 h-5"></i>
+        <span class="hidden sm:inline">608 630 821</span>
+      </a>
+      <button id="menu-btn" class="menu-btn lg:hidden flex items-center justify-center w-[68px]" aria-label="Otwórz menu" aria-expanded="false" aria-controls="mobile-menu">
+        <i data-lucide="menu" class="w-6 h-6"></i>
+      </button>
+    </div>
+  </div>
+  <div id="mobile-menu" class="mobile-menu lg:hidden absolute top-full inset-x-0 bg-white border-b-4 border-yellow shadow-[0_24px_40px_-24px_rgba(17,17,17,0.45)]">
+    <nav class="max-w-7xl mx-auto px-3 py-3 flex flex-col font-display font-bold uppercase text-2xl" aria-label="Menu mobilne">
+      <a href="uslugi.html" class="mobile-link px-3 py-2.5">Usługi</a>
+      <a href="index.html#sso" class="mobile-link px-3 py-2.5">Budowa SSO</a>
+      <a href="index.html#altany" class="mobile-link px-3 py-2.5">Altany i zadaszenia</a>
+      <a href="realizacje.html" class="mobile-link px-3 py-2.5">Realizacje</a>
+      <a href="index.html#opinie" class="mobile-link px-3 py-2.5">Opinie</a>
+      <a href="#kontakt" class="mobile-link px-3 py-2.5">Kontakt</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<!-- ============ PAGE HERO ============ -->
+<section class="relative bg-ink text-white pt-[72px] md:pt-[84px] overflow-hidden">
+  <div class="grain"></div>
+  <div class="relative max-w-7xl mx-auto px-5 md:px-8 py-14 md:py-20">
+    <nav class="text-sm text-mute-dark" aria-label="Okruszki">
+      <a href="index.html" class="footer-link">Strona główna</a>
+      <span class="mx-2" aria-hidden="true">/</span>
+      <span class="text-white">Realizacje</span>
+    </nav>
+    <div class="mt-6 grid lg:grid-cols-12 gap-8 lg:gap-12 items-end">
+      <h1 class="lg:col-span-7 font-display font-extrabold uppercase display-tight leading-[0.88] text-[3.6rem] sm:text-[5rem] lg:text-[6.2rem]">
+        Zdjęcia <span class="text-yellow">z&nbsp;naszych budów.</span>
+      </h1>
+      <p class="lg:col-span-5 text-lg text-mute-dark leading-relaxed">
+        Fundamenty, mury, więźby, dachy, elewacje i drewniane zadaszenia. Wybierz kategorię albo kliknij zdjęcie, żeby je powiększyć.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALERIA ============ -->
+<section class="py-12 md:py-16 px-5 md:px-8 bg-white">
+  <div class="max-w-7xl mx-auto">
+    <div class="flex flex-wrap gap-2 md:gap-3 mb-8 md:mb-10" role="group" aria-label="Filtruj zdjęcia">
+      <button type="button" class="chip px-4 py-2" data-filter="wszystkie" aria-pressed="true">Wszystkie <span class="opacity-60">28</span></button>
+      <button type="button" class="chip px-4 py-2" data-filter="altany" aria-pressed="false">Altany i zadaszenia <span class="opacity-60">5</span></button>
+      <button type="button" class="chip px-4 py-2" data-filter="elewacje" aria-pressed="false">Elewacje <span class="opacity-60">5</span></button>
+      <button type="button" class="chip px-4 py-2" data-filter="budowa" aria-pressed="false">Budowa domów <span class="opacity-60">5</span></button>
+      <button type="button" class="chip px-4 py-2" data-filter="dachy" aria-pressed="false">Dachy <span class="opacity-60">3</span></button>
+      <button type="button" class="chip px-4 py-2" data-filter="budynki" aria-pressed="false">Budynki gospodarcze <span class="opacity-60">6</span></button>
+      <button type="button" class="chip px-4 py-2" data-filter="wizualizacje" aria-pressed="false">Wizualizacje <span class="opacity-60">4</span></button>
+    </div>
+
+    <ul id="gallery" class="columns-2 md:columns-3 lg:columns-4 gap-3 md:gap-4">
+      <li class="gallery-item mb-3 md:mb-4 break-inside-avoid" data-cat="altany">
+        <button type="button" class="gallery-btn img-frame img-zoom" data-full="images/27.webp" data-caption="Drewniane zadaszenie tarasu z balkonem" data-cat-name="Altany i zadaszenia" aria-label="Powiększ zdjęcie: Drewniane zadaszenie tarasu z balkonem">
+          <img src="images/27-sm.webp" alt="Drewniane zadaszenie tarasu z balkonem" width="800" height="600" class="w-full h-auto block" loading="lazy">
+          <span class="tag absolute left-3 bottom-3 text-base">Altany i zadaszenia</span>
+        </button>
+      </li>
+      <li class="gallery-item mb-3 md:mb-4 break-inside-avoid" data-cat="elewacje">
+        <button type="button" class="gallery-btn img-frame img-zoom" data-full="images/8.webp" data-caption="Budynek z bramą garażową i drewnianym szczytem" data-cat-name="Elewacje" aria-label="Powiększ zdjęcie: Budynek z bramą garażową i drewnianym szczytem">
+          <img src="images/8-sm.webp" alt="Budynek z bramą garażową i drewnianym szczytem" width="600" height="800" class="w-full h-auto block" loading="lazy">
+          <span class="tag absolute left-3 bottom-3 text-base">Elewacje</span>
+        </button>
+      </li>
+      <li class="gallery-item mb-3 md:mb-4 break-inside-avoid" data-cat="budynki">
+        <button type="button" class="gallery-btn img-frame img-zoom" data-full="images/20.webp" data-caption="Budynki gospodarcze z utwardzonym placem" data-cat-name="Budynki gospodarcze" aria-label="Powiększ zdjęcie: Budynki gospodarcze z utwardzonym placem">
+          <img src="images/20-sm.webp" alt="Budynki gospodarcze z utwardzonym placem" width="800" height="600" class="w-full h-auto block" loading="lazy">
+          <span class="tag absolute left-3 bottom-3 text-base">Budynki gospodarcze</span>
+        </button>
+      </li>
+      <li class="gallery-item mb-3 md:mb-4 break-inside-avoid" data-cat="altany">
+        <button type="button" class="gallery-btn img-frame img-zoom" data-full="images/22.webp" data-caption="Zadaszenie z drewna wzdłuż budynku" data-cat-name="Altany i zadaszenia" aria-label="Powiększ zdjęcie: Zadaszenie z drewna wzdłuż budynku">
+          <img src="images/22-sm.webp" alt="Zadaszenie z drewna wzdłuż budynku" width="800" height="600" class="w-full h-auto block" loading="lazy">
+          <span class="tag absolute left-3 bottom-3 text-base">Altany i zadaszenia</span>
+        </button>
+      </li>
+      <li class="gallery-item mb-3 md:mb-4 break-inside-avoid" data-cat="elewacje">
+        <button type="button" class="gallery-btn img-frame img-zoom" data-full="images/28.webp" data-caption="Dom z elewacją z drewna i blachy na rąbek" data-cat-name="Elewacje" aria-label="Powiększ zdjęcie: Dom z elewacją z drewna i blachy na rąbek">
+          <img src="images/28-sm.webp" alt="Dom z elewacją z drewna i blachy na rąbek" width="800" height="600" class="w-full h-auto block" loading="lazy">
+          <span class="tag absolute left-3 bottom-3 text-base">Elewacje</span>
+        </button>
+      </li>
+      <li class="gallery-item mb-3 md:mb-4 break-inside-avoid" data-cat="budowa">
+        <button type="button" class="gallery-btn img-frame img-zoom" data-full="images/13.webp" data-caption="Zbrojenie ław fundamentowych" data-cat-name="Budowa domów" aria-label="Powiększ zdjęcie: Zbrojenie ław fundamentowych">
+          <img src="images/13-sm.webp" alt="Zbrojenie ław fundamentowych" width="600" height="800" class="w-full h-auto block" loading="lazy">
+          <span class="tag absolute left-3 bottom-3 text-base">Budowa domów</span>
+        </button>
+      </li>
+      <li class="gallery-item mb-3 md:mb-4 break-inside-avoid" data-cat="dachy">
+        <button type="button" class="gallery-btn img-frame img-zoom" data-full="images/9.webp" data-caption="Dach z blachy na rąbek" data-cat-name="Dachy" aria-label="Powiększ zdjęcie: Dach z blachy na rąbek">
+          <img src="images/9-sm.webp" alt="Dach z blachy na rąbek" width="800" height="600" class="w-full h-auto block" loading="lazy">
+          <span class="tag absolute left-3 bottom-3 text-base">Dachy</span>
+        </button>
+      </li>
+      <li class="gallery-item mb-3 md:mb-4 break-inside-avoid" data-cat="altany">
+        <button type="button" class="gallery-btn img-frame img-zoom" data-full="images/26.webp" data-caption="Altana ogrodowa z drewnianym sufitem" data-cat-name="Altany i zadaszenia" aria-label="Powiększ zdjęcie: Altana ogrodowa z drewnianym sufitem">
+          <img src="images/26-sm.webp" alt="Altana ogrodowa z drewnianym sufitem" width="600" height="800" class="w-full h-auto block" loading="lazy">
+          <span class="tag absolute left-3 bottom-3 text-base">Altany i zadaszenia</span>
+        </button>
+      </li>
+      <li class="gallery-item mb-3 md:mb-4 break-inside-avoid" data-cat="budynki">
+        <button type="button" class="gallery-btn img-frame img-zoom" data-full="images/21.webp" data-caption="Budynek z elewacją z blachy" data-cat-name="Budynki gospodarcze" aria-label="Powiększ zdjęcie: Budynek z elewacją z blachy">
+          <img src="images/21-sm.webp" alt="Budynek z elewacją z blachy" width="800" height="600" class="w-full h-auto block" loading="lazy">
+          <span class="tag absolute left-3 bottom-3 text-base">Budynki gospodarcze</span>
+        </button>
+      </li>
+      <li class="gallery-item mb-3 md:mb-4 break-inside-avoid" data-cat="elewacje">
+        <button type="button" class="gallery-btn img-frame img-zoom" data-full="images/5.webp" data-caption="Brama garażowa w obramowaniu z drewnianych lameli" data-cat-name="Elewacje" aria-label="Powiększ zdjęcie: Brama garażowa w obramowaniu z drewnianych lameli">
+          <img src="images/5-sm.webp" alt="Brama garażowa w obramowaniu z drewnianych lameli" width="600" height="800" class="w-full h-auto block" loading="lazy">
+          <span class="tag absolute left-3 bottom-3 text-base">Elewacje</span>
+        </button>
+      </li>
+      <li class="gallery-item mb-3 md:mb-4 break-inside-avoid" data-cat="budowa">
+        <button type="button" class="gallery-btn img-frame img-zoom" data-full="images/14.webp" data-caption="Ściany fundamentowe z izolacją" data-cat-name="Budowa domów" aria-label="Powiększ zdjęcie: Ściany fundamentowe z izolacją">
+          <img src="images/14-sm.webp" alt="Ściany fundamentowe z izolacją" width="800" height="600" class="w-full h-auto block" loading="lazy">
+          <span class="tag absolute left-3 bottom-3 text-base">Budowa domów</span>
+        </button>
+      </li>
+      <li class="gallery-item mb-3 md:mb-4 break-inside-avoid" data-cat="dachy">
+        <button type="button" class="gallery-btn img-frame img-zoom" data-full="images/10.webp" data-caption="Więźba dachowa" data-cat-name="Dachy" aria-label="Powiększ zdjęcie: Więźba dachowa">
+          <img src="images/10-sm.webp" alt="Więźba dachowa" width="600" height="800" class="w-full h-auto block" loading="lazy">
+          <span class="tag absolute left-3 bottom-3 text-base">Dachy</span>
+        </button>
+      </li>
+      <li class="gallery-item mb-3 md:mb-4 break-inside-avoid" data-cat="altany">
+        <button type="button" class="gallery-btn img-frame img-zoom" data-full="images/23.webp" data-caption="Zadaszenie na drewnianych słupach z mieczami" data-cat-name="Altany i zadaszenia" aria-label="Powiększ zdjęcie: Zadaszenie na drewnianych słupach z mieczami">
+          <img src="images/23-sm.webp" alt="Zadaszenie na drewnianych słupach z mieczami" width="800" height="600" class="w-full h-auto block" loading="lazy">
+          <span class="tag absolute left-3 bottom-3 text-base">Altany i zadaszenia</span>
+        </button>
+      </li>
+      <li class="gallery-item mb-3 md:mb-4 break-inside-avoid" data-cat="budynki">
+        <button type="button" class="gallery-btn img-frame img-zoom" data-full="images/17.webp" data-caption="Ściana szczytowa budynku gospodarczego" data-cat-name="Budynki gospodarcze" aria-label="Powiększ zdjęcie: Ściana szczytowa budynku gospodarczego">
+          <img src="images/17-sm.webp" alt="Ściana szczytowa budynku gospodarczego" width="600" height="800" class="w-full h-auto block" loading="lazy">
+          <span class="tag absolute left-3 bottom-3 text-base">Budynki gospodarcze</span>
+        </button>
+      </li>
+      <li class="gallery-item mb-3 md:mb-4 break-inside-avoid" data-cat="budowa">
+        <button type="button" class="gallery-btn img-frame img-zoom" data-full="images/11.webp" data-caption="Murowanie ścian parteru" data-cat-name="Budowa domów" aria-label="Powiększ zdjęcie: Murowanie ścian parteru">
+          <img src="images/11-sm.webp" alt="Murowanie ścian parteru" width="800" height="600" class="w-full h-auto block" loading="lazy">
+          <span class="tag absolute left-3 bottom-3 text-base">Budowa domów</span>
+        </button>
+      </li>
+      <li class="gallery-item mb-3 md:mb-4 break-inside-avoid" data-cat="elewacje">
+        <button type="button" class="gallery-btn img-frame img-zoom" data-full="images/6.webp" data-caption="Drewniana okładzina wokół bramy garażowej" data-cat-name="Elewacje" aria-label="Powiększ zdjęcie: Drewniana okładzina wokół bramy garażowej">
+          <img src="images/6-sm.webp" alt="Drewniana okładzina wokół bramy garażowej" width="600" height="800" class="w-full h-auto block" loading="lazy">
+          <span class="tag absolute left-3 bottom-3 text-base">Elewacje</span>
+        </button>
+      </li>
+      <li class="gallery-item mb-3 md:mb-4 break-inside-avoid" data-cat="dachy">
+        <button type="button" class="gallery-btn img-frame img-zoom" data-full="images/25.webp" data-caption="Wymiana pokrycia dachu, nowe łaty i membrana" data-cat-name="Dachy" aria-label="Powiększ zdjęcie: Wymiana pokrycia dachu, nowe łaty i membrana">
+          <img src="images/25-sm.webp" alt="Wymiana pokrycia dachu, nowe łaty i membrana" width="600" height="800" class="w-full h-auto block" loading="lazy">
+          <span class="tag absolute left-3 bottom-3 text-base">Dachy</span>
+        </button>
+      </li>
+      <li class="gallery-item mb-3 md:mb-4 break-inside-avoid" data-cat="altany">
+        <button type="button" class="gallery-btn img-frame img-zoom" data-full="images/24.webp" data-caption="Konstrukcja zadaszenia od spodu" data-cat-name="Altany i zadaszenia" aria-label="Powiększ zdjęcie: Konstrukcja zadaszenia od spodu">
+          <img src="images/24-sm.webp" alt="Konstrukcja zadaszenia od spodu" width="800" height="600" class="w-full h-auto block" loading="lazy">
+          <span class="tag absolute left-3 bottom-3 text-base">Altany i zadaszenia</span>
+        </button>
+      </li>
+      <li class="gallery-item mb-3 md:mb-4 break-inside-avoid" data-cat="budynki">
+        <button type="button" class="gallery-btn img-frame img-zoom" data-full="images/18.webp" data-caption="Wnętrze hali" data-cat-name="Budynki gospodarcze" aria-label="Powiększ zdjęcie: Wnętrze hali">
+          <img src="images/18-sm.webp" alt="Wnętrze hali" width="600" height="800" class="w-full h-auto block" loading="lazy">
+          <span class="tag absolute left-3 bottom-3 text-base">Budynki gospodarcze</span>
+        </button>
+      </li>
+      <li class="gallery-item mb-3 md:mb-4 break-inside-avoid" data-cat="budowa">
+        <button type="button" class="gallery-btn img-frame img-zoom" data-full="images/16.webp" data-caption="Szalunki fundamentów" data-cat-name="Budowa domów" aria-label="Powiększ zdjęcie: Szalunki fundamentów">
+          <img src="images/16-sm.webp" alt="Szalunki fundamentów" width="800" height="745" class="w-full h-auto block" loading="lazy">
+          <span class="tag absolute left-3 bottom-3 text-base">Budowa domów</span>
+        </button>
+      </li>
+      <li class="gallery-item mb-3 md:mb-4 break-inside-avoid" data-cat="wizualizacje">
+        <button type="button" class="gallery-btn img-frame img-zoom" data-full="images/3.webp" data-caption="Wizualizacja domu z fotowoltaiką" data-cat-name="Wizualizacje" aria-label="Powiększ zdjęcie: Wizualizacja domu z fotowoltaiką">
+          <img src="images/3-sm.webp" alt="Wizualizacja domu z fotowoltaiką" width="800" height="534" class="w-full h-auto block" loading="lazy">
+          <span class="tag absolute left-3 bottom-3 text-base">Wizualizacje</span>
+        </button>
+      </li>
+      <li class="gallery-item mb-3 md:mb-4 break-inside-avoid" data-cat="elewacje">
+        <button type="button" class="gallery-btn img-frame img-zoom" data-full="images/7.webp" data-caption="Drewniane lamele na elewacji, widok z boku" data-cat-name="Elewacje" aria-label="Powiększ zdjęcie: Drewniane lamele na elewacji, widok z boku">
+          <img src="images/7-sm.webp" alt="Drewniane lamele na elewacji, widok z boku" width="600" height="800" class="w-full h-auto block" loading="lazy">
+          <span class="tag absolute left-3 bottom-3 text-base">Elewacje</span>
+        </button>
+      </li>
+      <li class="gallery-item mb-3 md:mb-4 break-inside-avoid" data-cat="budynki">
+        <button type="button" class="gallery-btn img-frame img-zoom" data-full="images/19.webp" data-caption="Budynek gospodarczy, widok z boku" data-cat-name="Budynki gospodarcze" aria-label="Powiększ zdjęcie: Budynek gospodarczy, widok z boku">
+          <img src="images/19-sm.webp" alt="Budynek gospodarczy, widok z boku" width="600" height="800" class="w-full h-auto block" loading="lazy">
+          <span class="tag absolute left-3 bottom-3 text-base">Budynki gospodarcze</span>
+        </button>
+      </li>
+      <li class="gallery-item mb-3 md:mb-4 break-inside-avoid" data-cat="budowa">
+        <button type="button" class="gallery-btn img-frame img-zoom" data-full="images/12.webp" data-caption="Dom w stanie surowym" data-cat-name="Budowa domów" aria-label="Powiększ zdjęcie: Dom w stanie surowym">
+          <img src="images/12-sm.webp" alt="Dom w stanie surowym" width="600" height="800" class="w-full h-auto block" loading="lazy">
+          <span class="tag absolute left-3 bottom-3 text-base">Budowa domów</span>
+        </button>
+      </li>
+      <li class="gallery-item mb-3 md:mb-4 break-inside-avoid" data-cat="budynki">
+        <button type="button" class="gallery-btn img-frame img-zoom" data-full="images/15.webp" data-caption="Budynek gospodarczy w trakcie budowy" data-cat-name="Budynki gospodarcze" aria-label="Powiększ zdjęcie: Budynek gospodarczy w trakcie budowy">
+          <img src="images/15-sm.webp" alt="Budynek gospodarczy w trakcie budowy" width="600" height="800" class="w-full h-auto block" loading="lazy">
+          <span class="tag absolute left-3 bottom-3 text-base">Budynki gospodarcze</span>
+        </button>
+      </li>
+      <li class="gallery-item mb-3 md:mb-4 break-inside-avoid" data-cat="wizualizacje">
+        <button type="button" class="gallery-btn img-frame img-zoom" data-full="images/4.webp" data-caption="Wizualizacja domu od strony wejścia" data-cat-name="Wizualizacje" aria-label="Powiększ zdjęcie: Wizualizacja domu od strony wejścia">
+          <img src="images/4-sm.webp" alt="Wizualizacja domu od strony wejścia" width="800" height="534" class="w-full h-auto block" loading="lazy">
+          <span class="tag absolute left-3 bottom-3 text-base">Wizualizacje</span>
+        </button>
+      </li>
+      <li class="gallery-item mb-3 md:mb-4 break-inside-avoid" data-cat="wizualizacje">
+        <button type="button" class="gallery-btn img-frame img-zoom" data-full="images/1.webp" data-caption="Wizualizacja układu pomieszczeń" data-cat-name="Wizualizacje" aria-label="Powiększ zdjęcie: Wizualizacja układu pomieszczeń">
+          <img src="images/1-sm.webp" alt="Wizualizacja układu pomieszczeń" width="800" height="534" class="w-full h-auto block" loading="lazy">
+          <span class="tag absolute left-3 bottom-3 text-base">Wizualizacje</span>
+        </button>
+      </li>
+      <li class="gallery-item mb-3 md:mb-4 break-inside-avoid" data-cat="wizualizacje">
+        <button type="button" class="gallery-btn img-frame img-zoom" data-full="images/2.webp" data-caption="Wizualizacja układu pomieszczeń, widok z góry" data-cat-name="Wizualizacje" aria-label="Powiększ zdjęcie: Wizualizacja układu pomieszczeń, widok z góry">
+          <img src="images/2-sm.webp" alt="Wizualizacja układu pomieszczeń, widok z góry" width="800" height="534" class="w-full h-auto block" loading="lazy">
+          <span class="tag absolute left-3 bottom-3 text-base">Wizualizacje</span>
+        </button>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ KONTAKT CTA ============ -->
+<section id="kontakt" class="py-16 md:py-20 px-5 md:px-8 bg-yellow">
+  <div class="max-w-7xl mx-auto grid lg:grid-cols-12 gap-10 items-center">
+    <div class="lg:col-span-7">
+      <h2 class="font-display text-5xl md:text-6xl display-tight">
+        <span class="tag tag-invert tag-heading">Zbudujemy też u Ciebie</span>
+      </h2>
+      <p class="mt-6 text-lg leading-relaxed max-w-xl">Zadzwoń i opowiedz o swoim projekcie. Umówimy się na oględziny i przygotujemy wycenę.</p>
+    </div>
+    <div class="lg:col-span-5 flex flex-col gap-4">
+      <a href="tel:+48608630821" class="btn btn-dark px-7 py-5 text-2xl font-display font-bold">
+        <i data-lucide="phone-call" class="w-6 h-6 text-yellow"></i>
+        608 630 821
+      </a>
+      <p class="text-[15px] leading-relaxed">
+        <a href="mailto:piotr.magdach@tlen.pl" class="font-semibold border-b-2 border-ink/40 hover:border-ink active:opacity-70">piotr.magdach@tlen.pl</a><br>
+        Ujeździec Wielki 37, 55-100 Trzebnica
+      </p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ LIGHTBOX ============ -->
+<div id="lightbox" class="lightbox fixed inset-0 z-[60] bg-ink/95 flex flex-col" role="dialog" aria-modal="true" aria-label="Podgląd zdjęcia" aria-hidden="true">
+  <div class="flex items-center justify-between gap-4 px-4 md:px-6 h-16 text-white shrink-0">
+    <p class="text-sm text-mute-dark"><span id="lb-count"></span></p>
+    <button type="button" id="lb-close" class="lb-btn w-11 h-11 flex items-center justify-center" aria-label="Zamknij podgląd">
+      <i data-lucide="x" class="w-5 h-5"></i>
+    </button>
+  </div>
+  <div class="relative flex-1 min-h-0 flex items-center justify-center px-4 md:px-20">
+    <img id="lb-img" src="" alt="" class="max-w-full max-h-full object-contain shadow-[0_30px_80px_-30px_rgba(0,0,0,0.9)]">
+    <button type="button" id="lb-prev" class="lb-btn absolute left-2 md:left-6 top-1/2 -translate-y-1/2 w-12 h-12 flex items-center justify-center" aria-label="Poprzednie zdjęcie">
+      <i data-lucide="chevron-left" class="w-6 h-6"></i>
+    </button>
+    <button type="button" id="lb-next" class="lb-btn absolute right-2 md:right-6 top-1/2 -translate-y-1/2 w-12 h-12 flex items-center justify-center" aria-label="Następne zdjęcie">
+      <i data-lucide="chevron-right" class="w-6 h-6"></i>
+    </button>
+  </div>
+  <div class="px-4 md:px-6 py-5 text-center shrink-0">
+    <span id="lb-cat" class="tag text-base"></span>
+    <p id="lb-caption" class="mt-3 text-white"></p>
+  </div>
+</div>
+
+<!-- ============ FOOTER ============ -->
+<footer class="bg-ink text-white px-5 md:px-8 pt-16 pb-10">
+  <div class="max-w-7xl mx-auto">
+    <div class="grid md:grid-cols-12 gap-10">
+      <div class="md:col-span-5">
+        <img src="assets/logo-light.webp" alt="P.U.H. MAGDACH" width="557" height="86" class="h-9 w-auto" loading="lazy">
+        <p class="mt-5 text-mute-dark max-w-sm leading-relaxed">Budowa domów, dekarstwo, ciesielstwo, elewacje, usługi minikoparką i HDS z wywrotką. Trzebnica i okolice.</p>
+      </div>
+      <nav class="md:col-span-3" aria-label="Stopka">
+        <p class="font-display font-bold uppercase text-xl text-yellow">Strona</p>
+        <ul class="mt-4 space-y-2">
+          <li><a href="uslugi.html" class="footer-link">Usługi</a></li>
+          <li><a href="index.html#sso" class="footer-link">Budowa SSO</a></li>
+          <li><a href="realizacje.html" class="footer-link">Realizacje</a></li>
+          <li><a href="index.html#opinie" class="footer-link">Opinie</a></li>
+          <li><a href="#kontakt" class="footer-link">Kontakt</a></li>
+        </ul>
+      </nav>
+      <div class="md:col-span-4">
+        <p class="font-display font-bold uppercase text-xl text-yellow">Kontakt</p>
+        <ul class="mt-4 space-y-2 text-mute-dark">
+          <li><a href="tel:+48608630821" class="footer-link">608 630 821</a></li>
+          <li><a href="mailto:piotr.magdach@tlen.pl" class="footer-link">piotr.magdach@tlen.pl</a></li>
+          <li>Ujeździec Wielki 37, 55-100 Trzebnica</li>
+          <li>NIP 915-151-82-77, REGON 020201800</li>
+        </ul>
+      </div>
+    </div>
+    <div class="mt-14 pt-6 border-t border-white/10 text-sm text-mute-dark">
+      © <span data-year>2026</span> P.U.H. MAGDACH Piotr Orzechowski
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script src="gallery.js"></script>
+</body>
+</html>

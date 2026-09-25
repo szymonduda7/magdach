@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Usługi | P.U.H. MAGDACH Piotr Orzechowski, Trzebnica</title>
+<meta name="description" content="Usługi budowlane, minikoparką Bobcat E19 oraz HDS z wywrotką. Budowa domów SSO, dekarstwo, ciesielstwo i altany, elewacje, wykopy, niwelowanie, transport i sprzedaż kruszyw. Trzebnica i okolice.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Barlow+Condensed:wght@600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          ink: '#111111',
+          coal: '#1a1a1a',
+          'coal-raised': '#232323',
+          'coal-float': '#2d2d2d',
+          paper: '#f3f3f1',
+          line: '#e1e1dc',
+          mute: '#585854',
+          'mute-dark': '#a8a8a2',
+          yellow: '#ffdd00',
+          'yellow-deep': '#f0c800',
+        },
+        fontFamily: {
+          display: ['"Barlow Condensed"', 'sans-serif'],
+          sans: ['"Archivo"', 'sans-serif'],
+        },
+      },
+    },
+  };
+</script>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-white text-ink">
+
+<!-- ============ HEADER ============ -->
+<header id="site-header" class="site-header fixed top-0 inset-x-0 z-50">
+  <div class="max-w-7xl mx-auto pl-5 md:pl-8 h-[68px] md:h-20 flex items-stretch justify-between gap-6">
+    <a href="index.html" class="flex items-center shrink-0" aria-label="P.U.H. MAGDACH, strona główna">
+      <img src="assets/logo-dark.webp" alt="P.U.H. MAGDACH" width="557" height="86" class="h-7 md:h-9 w-auto">
+    </a>
+    <nav class="hidden lg:flex items-center gap-8 font-semibold text-[15px]" aria-label="Główna nawigacja">
+      <a href="uslugi.html" class="nav-link" aria-current="page">Usługi</a>
+      <a href="index.html#sso" class="nav-link">Budowa SSO</a>
+      <a href="index.html#altany" class="nav-link">Altany</a>
+      <a href="realizacje.html" class="nav-link">Realizacje</a>
+      <a href="index.html#opinie" class="nav-link">Opinie</a>
+      <a href="#kontakt" class="nav-link">Kontakt</a>
+    </nav>
+    <div class="flex items-stretch">
+      <a href="tel:+48608630821" class="header-phone flex items-center gap-2.5 px-5 md:px-7 font-display font-bold text-xl md:text-2xl" aria-label="Zadzwoń: 608 630 821">
+        <i data-lucide="phone" class="w-5 h-5"></i>
+        <span class="hidden sm:inline">608 630 821</span>
+      </a>
+      <button id="menu-btn" class="menu-btn lg:hidden flex items-center justify-center w-[68px]" aria-label="Otwórz menu" aria-expanded="false" aria-controls="mobile-menu">
+        <i data-lucide="menu" class="w-6 h-6"></i>
+      </button>
+    </div>
+  </div>
+  <div id="mobile-menu" class="mobile-menu lg:hidden absolute top-full inset-x-0 bg-white border-b-4 border-yellow shadow-[0_24px_40px_-24px_rgba(17,17,17,0.45)]">
+    <nav class="max-w-7xl mx-auto px-3 py-3 flex flex-col font-display font-bold uppercase text-2xl" aria-label="Menu mobilne">
+      <a href="uslugi.html" class="mobile-link px-3 py-2.5">Usługi</a>
+      <a href="index.html#sso" class="mobile-link px-3 py-2.5">Budowa SSO</a>
+      <a href="index.html#altany" class="mobile-link px-3 py-2.5">Altany i zadaszenia</a>
+      <a href="realizacje.html" class="mobile-link px-3 py-2.5">Realizacje</a>
+      <a href="index.html#opinie" class="mobile-link px-3 py-2.5">Opinie</a>
+      <a href="#kontakt" class="mobile-link px-3 py-2.5">Kontakt</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<!-- ============ PAGE HERO ============ -->
+<section class="relative bg-ink text-white pt-[72px] md:pt-[84px] overflow-hidden">
+  <div class="grain"></div>
+  <div class="relative max-w-7xl mx-auto px-5 md:px-8 py-14 md:py-20">
+    <nav class="text-sm text-mute-dark" aria-label="Okruszki">
+      <a href="index.html" class="footer-link">Strona główna</a>
+      <span class="mx-2" aria-hidden="true">/</span>
+      <span class="text-white">Usługi</span>
+    </nav>
+    <div class="mt-6 grid lg:grid-cols-12 gap-8 lg:gap-12 items-end">
+      <h1 class="lg:col-span-7 font-display font-extrabold uppercase display-tight leading-[0.88] text-[3.6rem] sm:text-[5rem] lg:text-[6.2rem]">
+        Budujemy, kopiemy <span class="text-yellow">i&nbsp;wozimy.</span>
+      </h1>
+      <p class="lg:col-span-5 text-lg text-mute-dark leading-relaxed">
+        Trzy rodzaje usług, jedna firma. Dom w stanie surowym otwartym, dach, altana lub elewacja, a do tego wykopy minikoparką i transport HDS&#8209;em z wywrotką.
+      </p>
+    </div>
+    <div class="mt-12 grid sm:grid-cols-3 gap-3">
+      <a href="#budowlane" class="tag text-2xl py-3 justify-between group">Usługi budowlane <i data-lucide="arrow-down" class="w-5 h-5 transition-transform duration-300 group-hover:translate-y-0.5"></i></a>
+      <a href="#minikoparka" class="tag text-2xl py-3 justify-between group">Usługi minikoparką <i data-lucide="arrow-down" class="w-5 h-5 transition-transform duration-300 group-hover:translate-y-0.5"></i></a>
+      <a href="#hds" class="tag text-2xl py-3 justify-between group">Usługi HDS/wywrotka <i data-lucide="arrow-down" class="w-5 h-5 transition-transform duration-300 group-hover:translate-y-0.5"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ USŁUGI BUDOWLANE ============ -->
+<section id="budowlane" class="py-20 md:py-28 px-5 md:px-8 bg-white">
+  <div class="max-w-7xl mx-auto">
+    <div class="grid lg:grid-cols-12 gap-8 lg:gap-12 items-end mb-12">
+      <h2 class="lg:col-span-7 font-display text-5xl md:text-6xl display-tight">
+        <span class="tag tag-heading">Usługi budowlane</span>
+      </h2>
+      <p class="lg:col-span-5 text-lg text-mute leading-relaxed">
+        Od fundamentów po dach. Budowę prowadzimy własną ekipą, a na każdym etapie wspiera nas kierownik budowy.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-6 lg:gap-8">
+      <!-- Budowa domów -->
+      <article class="card md:col-span-2 grid lg:grid-cols-2 reveal">
+        <div class="img-frame aspect-[4/3] lg:aspect-auto lg:min-h-[420px]">
+          <img src="images/12.webp" alt="Dom w stanie surowym na placu budowy" class="absolute inset-0 w-full h-full object-cover" loading="lazy" width="1440" height="1920">
+        </div>
+        <div class="p-7 md:p-10 lg:p-12 flex flex-col">
+          <h3 class="font-display font-extrabold uppercase text-4xl md:text-5xl display-tight leading-none">Budowa domów</h3>
+          <p class="mt-5 text-mute leading-relaxed">Kompleksowo wykonujemy stan surowy otwarty: od wykopu i fundamentów, przez ściany, po więźbę i pokrycie dachu. Na budowie wspiera nas kierownik budowy, więc nie musisz szukać i koordynować kilku ekip.</p>
+          <ul class="chev-list mt-6 space-y-2 font-display font-semibold text-xl leading-tight">
+            <li>Wykopy własną minikoparką</li>
+            <li>Ławy i ściany fundamentowe</li>
+            <li>Ściany nośne, nadproża, wieńce</li>
+            <li>Więźba i pokrycie dachu</li>
+            <li>Wsparcie kierownika budowy</li>
+          </ul>
+          <a href="realizacje.html#budowa" class="text-link inline-flex items-center gap-2 mt-auto pt-8 self-start">Zdjęcia z budów <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+        </div>
+      </article>
+
+      <!-- Dekarstwo -->
+      <article class="card flex flex-col reveal">
+        <div class="img-frame aspect-[16/10]">
+          <img src="images/9-sm.webp" alt="Dach pokryty grafitową blachą na rąbek" class="absolute inset-0 w-full h-full object-cover" loading="lazy" width="800" height="600">
+        </div>
+        <div class="p-7 md:p-9 flex flex-col flex-1">
+          <h3 class="font-display font-extrabold uppercase text-3xl md:text-4xl display-tight leading-none">Dekarstwo</h3>
+          <p class="mt-4 text-mute leading-relaxed">Kryjemy dachy nowych domów i budynków gospodarczych, wymieniamy stare pokrycia i naprawiamy przecieki.</p>
+          <ul class="chev-list mt-5 space-y-2 font-display font-semibold text-xl leading-tight">
+            <li>Nowe pokrycia dachowe</li>
+            <li>Wymiana starych pokryć</li>
+            <li>Rynny i obróbki blacharskie</li>
+            <li>Naprawy dachów i kominów</li>
+          </ul>
+          <a href="realizacje.html#dachy" class="text-link inline-flex items-center gap-2 mt-auto pt-7 self-start">Zobacz dachy <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+        </div>
+      </article>
+
+      <!-- Ciesielstwo -->
+      <article class="card flex flex-col reveal">
+        <div class="img-frame aspect-[16/10]">
+          <img src="images/27-sm.webp" alt="Drewniane zadaszenie tarasu z balkonem" class="absolute inset-0 w-full h-full object-cover" loading="lazy" width="800" height="600">
+        </div>
+        <div class="p-7 md:p-9 flex flex-col flex-1">
+          <h3 class="font-display font-extrabold uppercase text-3xl md:text-4xl display-tight leading-none">Ciesielstwo/altany</h3>
+          <p class="mt-4 text-mute leading-relaxed">Stawiamy drewniane konstrukcje: więźby dachowe, altany oraz zadaszenia wolnostojące i tarasowe.</p>
+          <ul class="chev-list mt-5 space-y-2 font-display font-semibold text-xl leading-tight">
+            <li>Więźby dachowe</li>
+            <li>Altany ogrodowe</li>
+            <li>Zadaszenia wolnostojące</li>
+            <li>Zadaszenia tarasów</li>
+          </ul>
+          <a href="realizacje.html#altany" class="text-link inline-flex items-center gap-2 mt-auto pt-7 self-start">Zobacz altany i zadaszenia <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+        </div>
+      </article>
+
+      <!-- Elewacje -->
+      <article class="card flex flex-col reveal">
+        <div class="img-frame aspect-[16/10]">
+          <img src="images/28-sm.webp" alt="Dom z elewacją z drewna i blachy na rąbek" class="absolute inset-0 w-full h-full object-cover" loading="lazy" width="800" height="600">
+        </div>
+        <div class="p-7 md:p-9 flex flex-col flex-1">
+          <h3 class="font-display font-extrabold uppercase text-3xl md:text-4xl display-tight leading-none">Elewacje/ocieplenia budynków</h3>
+          <p class="mt-4 text-mute leading-relaxed">Ocieplamy ściany i wykonujemy elewacje nowych oraz starszych budynków, także z okładziną z drewna.</p>
+          <ul class="chev-list mt-5 space-y-2 font-display font-semibold text-xl leading-tight">
+            <li>Ocieplenie ścian</li>
+            <li>Elewacje nowych budynków</li>
+            <li>Okładziny z drewna</li>
+          </ul>
+          <a href="realizacje.html#elewacje" class="text-link inline-flex items-center gap-2 mt-auto pt-7 self-start">Zobacz elewacje <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+        </div>
+      </article>
+
+      <!-- Sprzedaż domów -->
+      <article class="card flex flex-col reveal">
+        <div class="img-frame aspect-[16/10]">
+          <img src="images/3-sm.webp" alt="Wizualizacja parterowego domu z poddaszem" class="absolute inset-0 w-full h-full object-cover" loading="lazy" width="800" height="533">
+          <span class="tag absolute left-3 bottom-3 text-base">Wizualizacja</span>
+        </div>
+        <div class="p-7 md:p-9 flex flex-col flex-1">
+          <h3 class="font-display font-extrabold uppercase text-3xl md:text-4xl display-tight leading-none">Sprzedaż domów</h3>
+          <p class="mt-4 text-mute leading-relaxed">Budujemy także domy na sprzedaż. Zadzwoń, a opowiemy o aktualnej ofercie, lokalizacji i stanie budowy.</p>
+          <a href="tel:+48608630821" class="btn btn-dark px-6 py-3.5 mt-auto self-start">
+            <i data-lucide="phone" class="w-4 h-4"></i>
+            Zapytaj o ofertę
+          </a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MINIKOPARKA ============ -->
+<section id="minikoparka" class="py-20 md:py-28 px-5 md:px-8 bg-paper">
+  <div class="max-w-7xl mx-auto">
+    <div class="grid lg:grid-cols-12 gap-8 lg:gap-12 items-end mb-12">
+      <h2 class="lg:col-span-7 font-display text-5xl md:text-6xl display-tight">
+        <span class="tag tag-heading">Usługi minikoparką</span>
+      </h2>
+      <p class="lg:col-span-5 text-lg text-mute leading-relaxed">
+        Pracujemy minikoparką Bobcat E19. Jest wąska i lekka, więc wjedzie między budynki, do ogrodu czy wzdłuż ogrodzenia, nie niszcząc przy tym terenu.
+      </p>
+    </div>
+
+    <div class="grid lg:grid-cols-12 gap-6 lg:gap-8 items-stretch">
+      <figure class="lg:col-span-5 card relative p-6 md:p-8 flex flex-col justify-center reveal">
+        <img src="assets/koparka-bobcat-e19.webp" alt="Minikoparka Bobcat E19" class="w-full h-auto" width="460" height="290" loading="lazy">
+        <figcaption class="tag text-xl mt-6 self-start">Bobcat E19</figcaption>
+      </figure>
+
+      <div class="lg:col-span-7 grid sm:grid-cols-3 lg:grid-cols-1 gap-4">
+        <article class="card p-6 md:p-7 flex gap-5 items-start sm:flex-col lg:flex-row reveal">
+          <span class="w-12 h-12 bg-yellow flex items-center justify-center shrink-0"><i data-lucide="shovel" class="w-6 h-6"></i></span>
+          <div>
+            <h3 class="font-display font-extrabold uppercase text-2xl md:text-[1.75rem] leading-none">Wykopy pod fundamenty, przyłącza, ogrodzenia, odwodnienie</h3>
+            <p class="mt-3 text-mute leading-relaxed">Kopiemy pod ławy fundamentowe, przyłącza wody, kanalizacji i prądu, pod podmurówki ogrodzeń oraz rowy odwadniające i drenaż.</p>
+          </div>
+        </article>
+        <article class="card p-6 md:p-7 flex gap-5 items-start sm:flex-col lg:flex-row reveal">
+          <span class="w-12 h-12 bg-yellow flex items-center justify-center shrink-0"><i data-lucide="ruler" class="w-6 h-6"></i></span>
+          <div>
+            <h3 class="font-display font-extrabold uppercase text-2xl md:text-[1.75rem] leading-none">Niwelowanie</h3>
+            <p class="mt-3 text-mute leading-relaxed">Wyrównujemy teren pod budowę, trawnik, podjazd lub kostkę brukową.</p>
+          </div>
+        </article>
+        <article class="card p-6 md:p-7 flex gap-5 items-start sm:flex-col lg:flex-row reveal">
+          <span class="w-12 h-12 bg-yellow flex items-center justify-center shrink-0"><i data-lucide="house" class="w-6 h-6"></i></span>
+          <div>
+            <h3 class="font-display font-extrabold uppercase text-2xl md:text-[1.75rem] leading-none">Obkopywanie budynków</h3>
+            <p class="mt-3 text-mute leading-relaxed">Odkopujemy fundamenty istniejących budynków, żeby można było wykonać izolację ścian lub drenaż.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HDS / WYWROTKA ============ -->
+<section id="hds" class="relative py-20 md:py-28 px-5 md:px-8 bg-ink text-white overflow-hidden">
+  <div class="grain"></div>
+  <div class="relative max-w-7xl mx-auto">
+    <div class="grid lg:grid-cols-12 gap-8 lg:gap-12 items-end mb-12">
+      <h2 class="lg:col-span-7 font-display text-5xl md:text-6xl display-tight">
+        <span class="tag tag-heading">Usługi HDS/wywrotka</span>
+      </h2>
+      <p class="lg:col-span-5 text-lg text-mute-dark leading-relaxed">
+        Samochód z żurawiem HDS i skrzynią wywrotki. Sami załadujemy, przywieziemy i wyładujemy materiał tam, gdzie jest potrzebny.
+      </p>
+    </div>
+
+    <div class="grid lg:grid-cols-12 gap-6 lg:gap-8">
+      <div class="lg:col-span-5 card-dark flex flex-col reveal">
+        <div class="img-frame aspect-[16/7] lg:aspect-auto lg:flex-1 lg:min-h-[220px]">
+          <img src="assets/hds-wywrotka.webp" alt="Czerwona ciężarówka z żurawiem HDS i skrzynią wywrotki" class="absolute inset-0 w-full h-full object-cover" loading="lazy" width="700" height="184">
+        </div>
+        <dl class="grid grid-cols-3 divide-x divide-white/10 border-t border-white/10">
+          <div class="p-5 md:p-6">
+            <dt class="text-sm text-mute-dark">Ładowność</dt>
+            <dd class="font-display font-extrabold text-4xl md:text-5xl text-yellow leading-none mt-2">6 t</dd>
+          </div>
+          <div class="p-5 md:p-6">
+            <dt class="text-sm text-mute-dark">Dźwig HDS</dt>
+            <dd class="font-display font-extrabold text-4xl md:text-5xl text-yellow leading-none mt-2">5 t</dd>
+          </div>
+          <div class="p-5 md:p-6">
+            <dt class="text-sm text-mute-dark">Wywrotka</dt>
+            <dd class="font-display font-extrabold text-4xl md:text-5xl text-yellow leading-none mt-2">3 str.</dd>
+          </div>
+        </dl>
+      </div>
+
+      <div class="lg:col-span-7 grid sm:grid-cols-2 gap-4">
+        <article class="card-dark p-6 md:p-7 reveal">
+          <span class="w-12 h-12 bg-yellow text-ink flex items-center justify-center"><i data-lucide="forklift" class="w-6 h-6"></i></span>
+          <h3 class="font-display font-extrabold uppercase text-3xl leading-none mt-5">Załadunek</h3>
+          <p class="mt-3 text-mute-dark leading-relaxed">Załadunek i rozładunek żurawiem HDS: palety z materiałem, elementy konstrukcji, big bagi.</p>
+        </article>
+        <article class="card-dark p-6 md:p-7 reveal">
+          <span class="w-12 h-12 bg-yellow text-ink flex items-center justify-center"><i data-lucide="truck" class="w-6 h-6"></i></span>
+          <h3 class="font-display font-extrabold uppercase text-3xl leading-none mt-5">Transport</h3>
+          <p class="mt-3 text-mute-dark leading-relaxed">Przewozimy materiały budowlane i sprzęt, do 6 ton w jednym kursie.</p>
+        </article>
+        <article class="card-dark p-6 md:p-7 reveal">
+          <span class="w-12 h-12 bg-yellow text-ink flex items-center justify-center"><i data-lucide="arrow-down-to-dot" class="w-6 h-6"></i></span>
+          <h3 class="font-display font-extrabold uppercase text-3xl leading-none mt-5">Wywrotka na 3 strony</h3>
+          <p class="mt-3 text-mute-dark leading-relaxed">Wysypujemy ładunek na lewo, na prawo lub do tyłu, dokładnie tam, gdzie ma leżeć.</p>
+        </article>
+        <article class="card-dark p-6 md:p-7 reveal">
+          <span class="w-12 h-12 bg-yellow text-ink flex items-center justify-center"><i data-lucide="mountain" class="w-6 h-6"></i></span>
+          <h3 class="font-display font-extrabold uppercase text-3xl leading-none mt-5">Sprzedaż kruszyw</h3>
+          <p class="mt-3 text-mute-dark leading-relaxed">Sprzedajemy kruszywa z dowozem na miejsce. Zadzwoń i zapytaj o dostępne rodzaje.</p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ KONTAKT CTA ============ -->
+<section id="kontakt" class="py-16 md:py-20 px-5 md:px-8 bg-yellow">
+  <div class="max-w-7xl mx-auto grid lg:grid-cols-12 gap-10 items-center">
+    <div class="lg:col-span-7">
+      <h2 class="font-display text-5xl md:text-6xl display-tight">
+        <span class="tag tag-invert tag-heading">Zamów usługę</span>
+      </h2>
+      <p class="mt-6 text-lg leading-relaxed max-w-xl">Zadzwoń i powiedz, czego potrzebujesz. Ustalimy zakres, termin i cenę.</p>
+    </div>
+    <div class="lg:col-span-5 flex flex-col gap-4">
+      <a href="tel:+48608630821" class="btn btn-dark px-7 py-5 text-2xl font-display font-bold">
+        <i data-lucide="phone-call" class="w-6 h-6 text-yellow"></i>
+        608 630 821
+      </a>
+      <p class="text-[15px] leading-relaxed">
+        <a href="mailto:piotr.magdach@tlen.pl" class="font-semibold border-b-2 border-ink/40 hover:border-ink active:opacity-70">piotr.magdach@tlen.pl</a><br>
+        Ujeździec Wielki 37, 55-100 Trzebnica
+      </p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="bg-ink text-white px-5 md:px-8 pt-16 pb-10">
+  <div class="max-w-7xl mx-auto">
+    <div class="grid md:grid-cols-12 gap-10">
+      <div class="md:col-span-5">
+        <img src="assets/logo-light.webp" alt="P.U.H. MAGDACH" width="557" height="86" class="h-9 w-auto" loading="lazy">
+        <p class="mt-5 text-mute-dark max-w-sm leading-relaxed">Budowa domów, dekarstwo, ciesielstwo, elewacje, usługi minikoparką i HDS z wywrotką. Trzebnica i okolice.</p>
+      </div>
+      <nav class="md:col-span-3" aria-label="Stopka">
+        <p class="font-display font-bold uppercase text-xl text-yellow">Strona</p>
+        <ul class="mt-4 space-y-2">
+          <li><a href="uslugi.html" class="footer-link">Usługi</a></li>
+          <li><a href="index.html#sso" class="footer-link">Budowa SSO</a></li>
+          <li><a href="realizacje.html" class="footer-link">Realizacje</a></li>
+          <li><a href="index.html#opinie" class="footer-link">Opinie</a></li>
+          <li><a href="#kontakt" class="footer-link">Kontakt</a></li>
+        </ul>
+      </nav>
+      <div class="md:col-span-4">
+        <p class="font-display font-bold uppercase text-xl text-yellow">Kontakt</p>
+        <ul class="mt-4 space-y-2 text-mute-dark">
+          <li><a href="tel:+48608630821" class="footer-link">608 630 821</a></li>
+          <li><a href="mailto:piotr.magdach@tlen.pl" class="footer-link">piotr.magdach@tlen.pl</a></li>
+          <li>Ujeździec Wielki 37, 55-100 Trzebnica</li>
+          <li>NIP 915-151-82-77, REGON 020201800</li>
+        </ul>
+      </div>
+    </div>
+    <div class="mt-14 pt-6 border-t border-white/10 text-sm text-mute-dark">
+      © <span data-year>2026</span> P.U.H. MAGDACH Piotr Orzechowski
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
